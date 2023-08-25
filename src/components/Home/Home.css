@@ -1,0 +1,117 @@
+/* ------------- */
+/* banner styles */
+/* ------------- */
+.home {
+  position: relative;
+}
+.home-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3fd;
+}
+
+.banner-bg {
+  position: absolute;
+}
+
+.bg-1 {
+  width: 922px;
+  height: 622px;
+  display: block;
+  flex-shrink: 0;
+  top: -145px;
+  left: 60px;
+}
+
+.bg-2 {
+  width: 406px;
+  height: 274px;
+  top: 0px;
+  right: 70px;
+}
+
+.home-banner .left-side {
+  width: 50%;
+}
+.home-banner .right-side {
+  width: 45%;
+}
+.home-banner .right-side img {
+  width: 100%;
+  height: 670px;
+}
+
+.health-token {
+  width: 280px;
+  height: 50px;
+  border-radius: 40px;
+  border: 1px solid #b4b4b4;
+  background: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+  margin-bottom: 16px;
+  /* margin-left: 1rem; */
+}
+
+.health-token p {
+  color: #525252;
+  font-size: 25px;
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+.health-token img {
+  width: 51px;
+  height: 35px;
+}
+
+.banner-title h1 {
+  color: #000;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+.banner-title h1 span {
+  color: #1678f2;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.banner-title p {
+  width: 762px;
+  color: #8a8585;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-top: 20px;
+}
+
+.search-bar {
+  position: relative;
+}
+.search-bar input {
+  margin-top: 44px;
+  width: 90%;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #f9f7f7;
+  box-shadow: 2px 6px 4px 0px rgba(144, 139, 139, 0.4);
+  padding-left: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.search-bar img {
+  position: absolute;
+  /* border: 1px solid; */
+  top: 50%;
+  right: 103px;
+  width: 150px;
+}

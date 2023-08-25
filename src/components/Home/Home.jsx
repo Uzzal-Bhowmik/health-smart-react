@@ -8,6 +8,7 @@ import bannerBg2 from "../../assets/banner-bg-2.png";
 import BmiCalculator from "../BmiCalculator/BmiCalculator";
 import Services from "../Services/Services";
 import WeightSection from "../WeightSection/WeightSection";
+import NewsLetter from "../Newsletter/NewsLetter";
 
 const Home = () => {
   return (
@@ -71,6 +72,12 @@ const Home = () => {
         <WeightSection />
       </div>
       {/* Weight Section End */}
+
+      {/* Newsletter Section Start */}
+      <div className="py-5 newsletter-section">
+        <NewsLetter />
+      </div>
+      {/* Newsletter Section End */}
     </div>
   );
 };

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "group": "Vitamins",
+    "name": "Energy Drink",
+    "img": "../src/assets/energy-drink.webp",
+    "mg": "200",
+    "price": "18.00"
+  },
+  {
+    "id": "2",
+    "group": "Minerals",
+    "name": "Thermox Capsules",
+    "img": "../src/assets/thermox.webp",
+    "mg": "100",
+    "price": "49.00"
+  },
+  {
+    "id": "3",
+    "group": "Glucose",
+    "name": "Glucose Powder",
+    "img": "../src/assets/woke-powder.webp",
+    "mg": "50",
+    "price": "90.00"
+  },
+  {
+    "id": "4",
+    "group": "Proteins",
+    "name": "Dynamix Proteins",
+    "img": "../src/assets/body-dynamix.webp",
+    "mg": "20",
+    "price": "180.00"
+  }
+]

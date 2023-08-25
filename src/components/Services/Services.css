@@ -1,3 +1,114 @@
+.bg-blur-ellipse {
+  position: absolute;
+  top: -68px;
+  right: -80px;
+  width: 600px;
+  height: 300px;
+}
+
 .service-card {
-  width: 95% !important;
+  width: 92% !important;
+  height: 585px;
+  position: relative;
+  padding: 16px;
+  border-radius: 30px;
+  border: 0.5px solid rgba(0, 56, 62, 0.648);
+  background-color: white;
+  transition: all 0.3s ease-out;
+}
+
+.field {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: rgb(0, 56, 62);
+  width: 145px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 70px;
+  padding-top: 2px;
+}
+
+.service-img {
+  width: 100%;
+}
+
+.service-title {
+  margin: 10px auto;
+  font-weight: bold;
+  color: rgb(0, 56, 63);
+}
+
+.service-location svg {
+  stroke: rgb(0, 56, 62) !important;
+  fill: rgb(0, 56, 62) !important;
+  stroke-width: 1px;
+  height: 25px !important;
+  width: 25px !important;
+  margin-bottom: 5px;
+  margin-right: 8px;
+}
+
+.service-location span {
+  color: rgb(0, 56, 62);
+  font-weight: bold;
+}
+
+.service-price {
+  margin: 14px auto;
+  margin-left: 7px;
+}
+.service-price span:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(0, 56, 62);
+  margin-right: 2px;
+}
+.service-price span:nth-child(2) {
+  font-size: 14px;
+}
+
+.service-btn {
+  width: 95%;
+  height: 50px;
+  display: block;
+  margin-inline: auto;
+  border-radius: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(0, 56, 62);
+  outline: none;
+  border: 1px solid transparent;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.service-btn svg {
+  margin-left: 9px;
+  margin-bottom: 5px;
+}
+
+.service-btn:hover {
+  background-color: white;
+  color: rgb(0, 56, 62);
+  border: 1px solid rgb(0, 56, 62);
+  transition: all 0.2s ease;
+}
+
+/* ------------------- */
+/* slick slider styles */
+/* ------------------- */
+
+.slick-track {
+  margin-left: 20px !important;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  color: rgb(0, 56, 62) !important;
+  font-size: 30px !important;
+  opacity: 1 !important;
 }

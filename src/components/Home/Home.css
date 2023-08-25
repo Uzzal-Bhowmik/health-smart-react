@@ -109,13 +109,30 @@
 
 .search-bar img {
   position: absolute;
-  /* border: 1px solid; */
   top: 50%;
   right: 103px;
   width: 150px;
 }
 
-/* bmi container styles */
+/* ------------------ */
+/* bmi section styles */
+/* ------------------ */
 .bmi-container {
   background-color: #f3f3fd;
+}
+
+/* ----------------------- */
+/* services section styles */
+/* ----------------------- */
+
+.services-container {
+  background-color: #f3f3fd;
+}
+
+/* ----------------------- */
+/* weight section styles */
+/* ----------------------- */
+
+.weight-section {
+  background-color: #02a576;
 }

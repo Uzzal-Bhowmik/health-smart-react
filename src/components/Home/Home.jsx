@@ -7,6 +7,7 @@ import bannerBg1 from "../../assets/banner-bg-1.png";
 import bannerBg2 from "../../assets/banner-bg-2.png";
 import BmiCalculator from "../BmiCalculator/BmiCalculator";
 import Services from "../Services/Services";
+import WeightSection from "../WeightSection/WeightSection";
 
 const Home = () => {
   return (
@@ -59,11 +60,17 @@ const Home = () => {
       </div>
       {/* Bmi Calculator End */}
 
-      {/* Services Start */}
+      {/* Services Section Start */}
       <div className="py-5 services-container">
         <Services />
       </div>
-      {/* Services End */}
+      {/* Services Section End */}
+
+      {/* Weight Section Start */}
+      <div className="py-5 weight-section">
+        <WeightSection />
+      </div>
+      {/* Weight Section End */}
     </div>
   );
 };

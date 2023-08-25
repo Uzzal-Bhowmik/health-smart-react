@@ -1,0 +1,114 @@
+.section-title {
+  background: linear-gradient(141deg, #3a8ef6 0%, #6f3afa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 8;
+  font-size: 2rem;
+}
+
+/* ---------------- */
+/* left  side style */
+/* ---------------- */
+.bmi-calc .left-side h1 {
+  margin: 1rem auto 1.2rem auto;
+  font-size: 3.4rem;
+  line-height: 80px;
+  font-weight: 500;
+}
+
+.bmi-calc .left-side p {
+  color: #8a8585;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.left-side {
+  width: 55%;
+}
+
+.features-ops {
+  margin-top: 50px;
+  margin-left: -14px;
+}
+.features-ops div {
+  width: 33%;
+  padding-inline: 10px;
+  height: 183px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 10px;
+}
+.features-ops div:hover {
+  box-shadow: 2px 2px 6px lightgray;
+}
+
+.features-ops div h5 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.features-ops div p {
+  font-size: 14px !important;
+  margin-bottom: 0 !important;
+}
+.features-ops div img {
+  width: 60px;
+  height: 60px;
+}
+
+/* ---------------- */
+/* right side style */
+/* ---------------- */
+
+.right-side {
+  width: 43%;
+  margin-left: 8px;
+}
+
+.right-side p {
+  color: #8a8585;
+  font-size: 1.2rem;
+  margin: 0.8rem auto 2.5rem auto;
+}
+
+.right-side input,
+select {
+  width: 48%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  background: #ffffff;
+  box-shadow: 2px 6px 4px 0px rgba(144, 139, 139, 0.4);
+  padding-left: 1rem;
+  border: none;
+  outline: none;
+}
+
+.right-side select {
+  color: #8a8585 !important;
+}
+
+.right-side option {
+  color: #000 !important;
+}
+
+.bmi-calc-btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 17.049px;
+  background: linear-gradient(141deg, #3a8ef6 0%, #6f3afa 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  margin-left: 8px;
+}
+
+.bmi-calc-btn:hover {
+  transform: translateY(-2px);
+}

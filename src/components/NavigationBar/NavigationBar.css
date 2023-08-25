@@ -63,6 +63,7 @@
 
 .login-btn {
   text-decoration: none;
+  transition: all 0.2s ease-out;
 }
 .login-btn button {
   width: 170px;
@@ -74,4 +75,9 @@
   font-weight: bolder;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  transform: translateY(-3px);
 }

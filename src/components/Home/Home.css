@@ -43,8 +43,8 @@
 }
 
 .health-token {
-  width: 280px;
-  height: 50px;
+  width: 265px;
+  height: 42px;
   border-radius: 40px;
   border: 1px solid #b4b4b4;
   background: rgba(255, 255, 255, 0.25);
@@ -54,19 +54,18 @@
   align-items: center;
   margin-top: 1.2rem;
   margin-bottom: 16px;
-  /* margin-left: 1rem; */
 }
 
 .health-token p {
   color: #525252;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 700;
   margin-right: 12px;
 }
 
 .health-token img {
-  width: 51px;
-  height: 35px;
+  width: 41px;
+  height: 29px;
 }
 
 .banner-title h1 {
@@ -114,4 +113,9 @@
   top: 50%;
   right: 103px;
   width: 150px;
+}
+
+/* bmi container styles */
+.bmi-container {
+  background-color: #f3f3fd;
 }

@@ -5,6 +5,8 @@ import searchOps from "../../assets/search-options.png";
 import doctor from "../../assets/doctor.png";
 import bannerBg1 from "../../assets/banner-bg-1.png";
 import bannerBg2 from "../../assets/banner-bg-2.png";
+import BmiCalculator from "../BmiCalculator/BmiCalculator";
+import Services from "../Services/Services";
 
 const Home = () => {
   return (
@@ -41,7 +43,7 @@ const Home = () => {
               id=""
               placeholder="Search your service"
             />
-            <img src={searchOps} alt="" />
+            <img src={searchOps} alt="" style={{ cursor: "pointer" }} />
           </div>
         </div>
 
@@ -49,6 +51,19 @@ const Home = () => {
           <img src={doctor} alt="" />
         </div>
       </div>
+      {/* Top Banner End */}
+
+      {/* Bmi Calculator Start */}
+      <div className="py-5 bmi-container">
+        <BmiCalculator />
+      </div>
+      {/* Bmi Calculator End */}
+
+      {/* Services Start */}
+      <div className="py-5 services-container">
+        <Services />
+      </div>
+      {/* Services End */}
     </div>
   );
 };

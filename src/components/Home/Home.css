@@ -136,3 +136,20 @@
 .weight-section {
   background-color: #02a576;
 }
+
+/* ------------------------- */
+/* newsletter section styles */
+/* ------------------------- */
+
+.newsletter-section {
+  min-height: 600px !important;
+}
+
+/* ------------------------- */
+/* footer section styles */
+/* ------------------------- */
+footer {
+  background-color: #f3f3fdcd;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}

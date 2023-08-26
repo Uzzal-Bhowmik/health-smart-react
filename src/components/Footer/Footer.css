@@ -1,0 +1,41 @@
+.social-icons {
+  margin-top: 2rem;
+}
+.social-icons svg {
+  margin-right: 2rem;
+  height: 1.3rem !important;
+  width: 1.3rem !important;
+  stroke: rgb(22, 120, 242);
+  fill: rgb(22, 120, 242);
+  cursor: pointer;
+}
+
+.footer-container .middle h5,
+.footer-container .right h5 {
+  color: rgb(81, 107, 248);
+  margin-bottom: 2rem;
+}
+
+.footer-container .middle a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.footer-container .right div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 1.5rem;
+}
+
+.footer-container .right div svg {
+  height: 1.3rem !important;
+  width: 1.3rem !important;
+  stroke: rgb(22, 120, 242) !important;
+  fill: rgb(22, 120, 242) !important;
+}
+.footer-container .right div span {
+  margin-left: 1.1rem;
+}

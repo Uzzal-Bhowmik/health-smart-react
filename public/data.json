@@ -8,7 +8,10 @@
     "reviews": "16",
     "description": "Weight loss generally requires creating a calorie deficit, ories than you expend and we provide dietary service for you.",
     "location": "New York, USA",
-    "price": "120"
+    "price": "120",
+    "docName": "Dr Uzzal Bhowmik",
+    "docProfile": "https://img.freepik.com/premium-photo/covid-19-coronavirus-outbreak-healthcare-workers-pandemic-concept_1258-19738.jpg",
+    "disabledDays": [3, 4, 9]
   },
   {
     "id": "2",
@@ -19,7 +22,10 @@
     "reviews": "26",
     "description": "Dermatologists specialize in the diagnosis and treatment of skin, hair, and nail disorders. They often deal with issues such as acne etc.",
     "location": "Missouri, USA",
-    "price": "145"
+    "price": "145",
+    "docName": "Dr Steve Smith",
+    "docProfile": "https://img.freepik.com/premium-photo/covid-19-coronavirus-outbreak-healthcare-workers-pandemic-concept_1258-19738.jpg",
+    "disabledDays": [2, 5]
   },
   {
     "id": "3",
@@ -30,7 +36,10 @@
     "reviews": "18",
     "description": "Gastroenterologists focus on the digestive system, including the stomach, intestines, liver, and pancreas. ",
     "location": "New Jersey, USA",
-    "price": "220"
+    "price": "220",
+    "docName": "Dr John Doe",
+    "docProfile": "https://img.freepik.com/premium-photo/covid-19-coronavirus-outbreak-healthcare-workers-pandemic-concept_1258-19738.jpg",
+    "disabledDays": [1]
   },
   {
     "id": "4",
@@ -41,7 +50,10 @@
     "reviews": "20",
     "description": "Endocrinologists specialize in hormonal disorders. They diagnose and treat conditions related to the endocrine system, such as diabetes.",
     "location": "New York, USA",
-    "price": "100"
+    "price": "100",
+    "docName": "Dr Boris Hensen",
+    "docProfile": "https://img.freepik.com/premium-photo/covid-19-coronavirus-outbreak-healthcare-workers-pandemic-concept_1258-19738.jpg",
+    "disabledDays": [2, 5]
   },
   {
     "id": "5",
@@ -52,7 +64,10 @@
     "reviews": "25",
     "description": "linical nutritionists work in healthcare settings, such as hospitals and clinics, to assess and develop specialized diets.",
     "location": "New York, USA",
-    "price": "230"
+    "price": "230",
+    "docName": "Dr Jerry Ben",
+    "docProfile": "https://img.freepik.com/premium-photo/covid-19-coronavirus-outbreak-healthcare-workers-pandemic-concept_1258-19738.jpg",
+    "disabledDays": [3, 7]
   },
   {
     "id": "6",
@@ -63,6 +78,9 @@
     "reviews": "15",
     "description": "Nutrigenomics explores the interaction between genes and nutrition. It examines how an individual's genetic makeup influences.",
     "location": "California, USA",
-    "price": "114"
+    "price": "114",
+    "docName": "Dr Ross Johnson",
+    "docProfile": "https://img.freepik.com/premium-photo/covid-19-coronavirus-outbreak-healthcare-workers-pandemic-concept_1258-19738.jpg",
+    "disabledDays": [2, 6]
   }
 ]

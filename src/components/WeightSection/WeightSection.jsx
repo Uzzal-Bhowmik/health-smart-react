@@ -13,11 +13,13 @@ const WeightSection = () => {
   }, []);
 
   const notify = (name) => {
-    toast.success(<b>{`${name} is added to cart.`}</b>);
+    toast.success(<b>{`${name} is added to cart.`}</b>, {
+      position: "top-right",
+    });
   };
 
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="flex-center weight-container">
         <div className="left-side">
           <h1 className="fs-1 fw-bolder" style={{ color: "white" }}>
@@ -74,10 +76,10 @@ const WeightSection = () => {
         </div>
       </div>
 
-      <h4 className="mt-5 mb-4 fs-1 text-light fw-bold">
+      <h4 className="mt-5 mb-5 fs-1 text-light fw-bold">
         Top Selling Products This Week
       </h4>
-      <div className="product-container flex-center">
+      <div className="product-container flex-center pb-5">
         {products &&
           products.map((product) => (
             <div className="product-card" key={product.id}>

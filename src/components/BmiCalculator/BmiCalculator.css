@@ -30,7 +30,6 @@
 }
 
 .features-ops {
-  margin-top: 50px;
   margin-left: -14px;
 }
 .features-ops div {
@@ -42,7 +41,7 @@
   border-radius: 10px;
 }
 .features-ops div:hover {
-  box-shadow: 2px 2px 6px lightgray;
+  box-shadow: 2px 2px 20px lightgray;
 }
 
 .features-ops div h5 {
@@ -63,14 +62,17 @@
 /* ---------------- */
 
 .right-side {
-  width: 43%;
-  margin-left: 8px;
+  width: 47%;
+  padding-left: 23px;
 }
 
 .right-side p {
   color: #8a8585;
   font-size: 1.2rem;
-  margin: 0.8rem auto 2.5rem auto;
+  margin: 1.8rem auto 1.7rem auto;
+}
+.bmi-form {
+  padding-top: 27px;
 }
 
 .right-side input,

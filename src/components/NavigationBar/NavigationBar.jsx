@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const NavigationBar = () => {
   return (
@@ -129,32 +130,15 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <NavLink
-                to="/"
-                className={({ isActive, isPending }) =>
-                  isActive ? "active" : isPending ? "pending" : ""
-                }
-              >
-                Home
-              </NavLink>
+              <HashLink to="/#home">Home</HashLink>
 
-              <NavLink
-                to="/about"
-                className={({ isActive, isPending }) =>
-                  isActive ? "active" : isPending ? "pending" : ""
-                }
-              >
-                About Us
-              </NavLink>
+              <HashLink to="/#features">Features</HashLink>
 
-              <NavLink
-                to="/usage"
-                className={({ isActive, isPending }) =>
-                  isActive ? "active" : isPending ? "pending" : ""
-                }
-              >
-                How To Use
-              </NavLink>
+              <HashLink to="/#services">Services</HashLink>
+
+              <HashLink to="/#products">Products</HashLink>
+
+              <HashLink to="/#newsletter">Contact Us</HashLink>
             </Nav>
 
             <Link to="/login" className="login-btn">

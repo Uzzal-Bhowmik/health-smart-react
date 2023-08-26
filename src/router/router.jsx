@@ -4,6 +4,9 @@ import Main from "../layout/main";
 import Home from "../components/Home/Home";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import DynamicService from "../components/DynamicService/DynamicService";
+import Login from "../components/Login/Login";
+import Register from "../components/Register/Register";
+import SuccessPage from "../components/SuccessPage/SuccessPage";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,18 @@ const router = createBrowserRouter([
             `https://64e8cbb899cf45b15fe02718.mockapi.io/services/${params.id}`
           ),
         element: <DynamicService />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/success",
+        element: <SuccessPage />,
       },
     ],
   },

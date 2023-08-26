@@ -49,8 +49,14 @@ const BmiCalculator = () => {
             weight.
           </p>
 
+          <div className="mt-5 mb-4">
+            <h4 className="section-title m-0 fw-semibold fs-4">
+              We also help you with
+            </h4>
+          </div>
+
           <div className="features-ops flex-center align-items-start">
-            <div className="pt-2">
+            <div className="pt-2 me-2 shadow">
               <img src={icon1} alt="" style={{ height: "50px" }} />
               <h5>Food Choice</h5>
               <p>
@@ -59,7 +65,7 @@ const BmiCalculator = () => {
               </p>
             </div>
 
-            <div>
+            <div className="me-2">
               <img src={icon2} alt="" />
               <h5>Interactive Chatbot</h5>
               <p>
@@ -68,7 +74,7 @@ const BmiCalculator = () => {
               </p>
             </div>
 
-            <div>
+            <div className="">
               <img src={icon3} alt="" />
               <h5>Nutritional Value</h5>
               <p>
@@ -90,8 +96,13 @@ const BmiCalculator = () => {
             selected.
           </p>
 
-          <form action="" name="bmi-form" onSubmit={calculateBmi}>
-            <div className="flex-between mb-3">
+          <form
+            action=""
+            name="bmi-form"
+            onSubmit={calculateBmi}
+            className="bmi-form"
+          >
+            <div className="flex-between mb-4">
               <input
                 type="text"
                 name="height"

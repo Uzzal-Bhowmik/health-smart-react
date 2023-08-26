@@ -52,12 +52,12 @@
   margin-right: 40px;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease-out;
+  z-index: 999;
 }
-.navbar-nav a:hover {
+.navbar-nav a .active {
   border-bottom: 2px solid #1260bf77;
 }
-
-.navbar-nav .active {
+.navbar-nav a:hover {
   border-bottom: 2px solid #1260bf77;
 }
 

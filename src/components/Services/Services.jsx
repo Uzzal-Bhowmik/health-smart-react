@@ -26,7 +26,7 @@ const Services = () => {
   };
 
   return (
-    <div className="container position-relative">
+    <div className="container position-relative mt-5">
       <img src={ellipse1} alt="" className="bg-blur-ellipse" />
       <h4 className="fw-bold section-title fs-1">Our Services</h4>
       <h1 className="fs-2 fw-bold ms-1 mt-4 mb-5 ms-2">

@@ -1,0 +1,54 @@
+.newsletter-btn {
+  position: relative;
+}
+.newsletter-btn input {
+  width: 80%;
+  height: 46px;
+  padding-left: 1rem;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid rgb(81, 107, 248);
+}
+
+.newsletter-btn button {
+  position: absolute;
+  top: 1%;
+  right: 10%;
+  height: 45px;
+  width: 116px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: rgb(81, 107, 248);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.newsletter-btn button:hover {
+  background-color: white;
+  border: 1px solid rgb(81, 107, 248);
+  color: rgb(81, 107, 248);
+}
+
+.fruit-left img {
+  animation: float 3000ms ease-in-out infinite;
+  padding-top: 30px;
+}
+.fruit-right img {
+  animation: float 3000ms ease-in-out 3s infinite;
+  padding-top: 30px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

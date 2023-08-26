@@ -1,14 +1,14 @@
 .bg-blur-ellipse {
   position: absolute;
-  top: -68px;
-  right: -80px;
+  top: -48px;
+  right: 0;
   width: 600px;
   height: 300px;
 }
 
 .service-card {
   width: 92% !important;
-  height: 585px;
+  min-height: 585px;
   position: relative;
   padding: 16px;
   border-radius: 30px;
@@ -103,7 +103,7 @@
 /* ------------------- */
 
 .slick-track {
-  margin-left: 20px !important;
+  left: 21px !important;
 }
 
 .slick-next::before,

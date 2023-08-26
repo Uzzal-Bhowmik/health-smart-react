@@ -1,0 +1,20 @@
+.success-page {
+  height: 100vh;
+}
+.success-card svg {
+  stroke: #9abc66;
+  fill: #9abc66;
+  width: 178px;
+  height: 205px;
+  line-height: 207px;
+  margin-left: 2px;
+}
+.success-card {
+  background: white;
+  padding: 60px;
+  box-shadow: 0 0 20px #c8d0d8;
+  display: inline-block;
+  margin: 0 auto;
+  border: 2px solid #9abc66;
+  border-radius: 20px;
+}

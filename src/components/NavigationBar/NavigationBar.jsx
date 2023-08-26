@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./NavigationBar.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { AuthContext } from "../../context/ContextAuth";
 
 const NavigationBar = () => {
+  const [path, setPath] = useState("");
+  const { user, logOut } = useContext(AuthContext);
+
+  // finding pathname
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname.includes("login")) {
+      setPath("login");
+    } else {
+      setPath("");
+    }
+  }, [location]);
+
+  // log out
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        //sign out successful
+      })
+      .catch((err) => console.error(err));
+  };
+
+  console.log(user);
   return (
     <div>
       <Navbar expand="lg">
@@ -141,9 +165,48 @@ const NavigationBar = () => {
               <HashLink to="/#newsletter">Contact Us</HashLink>
             </Nav>
 
-            <Link to="/login" className="login-btn">
-              <button>Log In</button>
-            </Link>
+            {user?.uid && (
+              <div className="me-3" style={{ cursor: "pointer" }}>
+                {user?.photoURL ? (
+                  <img
+                    src={`${user.photoURL}`}
+                    style={{
+                      width: "50%",
+                      borderRadius: "50%",
+                      display: "block",
+                      marginLeft: "auto",
+                    }}
+                    title={`${user.email}`}
+                  />
+                ) : (
+                  <span
+                    className="fs-3 px-3 py-1 fw-bold rounded-circle bg-success text-light"
+                    title={`${user.email}`}
+                  >
+                    {user?.displayName[0].toUpperCase() ||
+                      user?.email[0].toUpperCase()}
+                  </span>
+                )}
+              </div>
+            )}
+
+            {!user?.uid ? (
+              <>
+                {path === "login" ? (
+                  <Link to="/register" className="login-btn">
+                    <button>Register</button>
+                  </Link>
+                ) : (
+                  <Link to="/login" className="login-btn">
+                    <button>Log In</button>
+                  </Link>
+                )}
+              </>
+            ) : (
+              <button className="login-btn" onClick={handleLogOut}>
+                Log Out
+              </button>
+            )}
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./Register.css";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import bgBlur from "../../assets/banner-bg-1.png";
+import { AuthContext } from "../../context/ContextAuth";
 
 const Register = () => {
+  const [registerError, setRegisterError] = useState("");
+  const { signUp, googleSignIn } = useContext(AuthContext);
+
+  const navigate = useNavigate();
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    setRegisterError("");
+
+    const form = e.target;
+    const email = form.email.value;
+    const pass = form.password.value;
+
+    signUp(email, pass)
+      .then((result) => {
+        // sign in successful
+        console.log(result.user);
+        navigate("/", { replace: true });
+      })
+      .catch((err) => setRegisterError(err?.code));
+  };
+
+  const handleGoogle = () => {
+    setRegisterError("");
+    googleSignIn()
+      .then((result) => {
+        console.log(result.user);
+        navigate("/", { replace: true });
+      })
+      .catch((err) => setRegisterError(err?.code));
+  };
   return (
     <div className="login-register-container">
       <div className="user-account-page container flex-center">
@@ -25,7 +57,7 @@ const Register = () => {
         <div className="right">
           <h1 className="fs-1 fw-bold my-5">Welcome User</h1>
 
-          <form action="">
+          <form action="" onSubmit={handleRegister}>
             <input type="text" name="name" placeholder="Enter Full Name" />
             <br />
             <input
@@ -51,6 +83,12 @@ const Register = () => {
               Having Issue?
             </a>
 
+            {registerError && (
+              <p className="mb-0 mt-3 ms-2 text-danger fw-bolder">
+                {registerError}
+              </p>
+            )}
+
             <button type="submit">Sign Up</button>
           </form>
 
@@ -60,10 +98,13 @@ const Register = () => {
             <div className="right-divider"></div>
           </div>
 
-          <div className="external-login-method flex-start justify-content-between bg-light">
+          <button
+            className="external-login-method flex-start justify-content-between"
+            onClick={handleGoogle}
+          >
             <FcGoogle /> <span>Continue with Google</span>
             <span></span>
-          </div>
+          </button>
         </div>
       </div>
     </div>

@@ -1,10 +1,52 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import bgBlur from "../../assets/banner-bg-1.png";
+import { AuthContext } from "../../context/ContextAuth";
 
 const Login = () => {
+  const [loginError, setLoginError] = useState("");
+  const { signIn, googleSignIn } = useContext(AuthContext);
+
+  // location path to redirect
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  let from = location.state?.from?.pathname || "/";
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    setLoginError("");
+
+    const form = e.target;
+    const email = form.email.value;
+    const pass = form.password.value;
+    console.log(form);
+
+    signIn(email, pass)
+      .then((result) => {
+        // sign in successful
+        console.log(result.user);
+
+        // navigate to the desired route
+        navigate(from, { replace: true });
+      })
+      .catch((err) => setLoginError(err?.code));
+  };
+
+  const handleGoogle = () => {
+    setLoginError("");
+    googleSignIn()
+      .then((result) => {
+        console.log(result.user);
+
+        // navigate to the desired route
+        navigate(from, { replace: true });
+      })
+      .catch((err) => setLoginError(err?.code));
+  };
+
   return (
     <div className="login-register-container">
       <div className="user-account-page container flex-center">
@@ -15,7 +57,7 @@ const Login = () => {
           </h1>
 
           <p className="fw-semibold text-muted mb-0 fs-6">
-            If you don't have an account <br />
+            If you dont have an account <br />
             you can <Link to="/register">Register Here!</Link>
           </p>
 
@@ -25,7 +67,7 @@ const Login = () => {
         <div className="right">
           <h1 className="fs-1 fw-bold my-5">Welcome Back</h1>
 
-          <form action="">
+          <form action="" onSubmit={handleLogin}>
             <input
               type="email"
               name="email"
@@ -51,6 +93,12 @@ const Login = () => {
               Recover Password?
             </a>
 
+            {loginError && (
+              <p className="mb-0 mt-3 ms-2 text-danger fw-bolder">
+                {loginError}
+              </p>
+            )}
+
             <button type="submit">Sign In</button>
           </form>
 
@@ -60,10 +108,13 @@ const Login = () => {
             <div className="right-divider"></div>
           </div>
 
-          <div className="external-login-method flex-start justify-content-between bg-light">
+          <button
+            className="external-login-method flex-start justify-content-between"
+            onClick={handleGoogle}
+          >
             <FcGoogle /> <span>Continue with Google</span>
             <span></span>
-          </div>
+          </button>
         </div>
       </div>
     </div>

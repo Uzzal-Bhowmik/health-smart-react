@@ -65,6 +65,7 @@
   text-decoration: none;
   transition: all 0.2s ease-out;
 }
+.login-btn,
 .login-btn button {
   width: 170px;
   height: 50px;

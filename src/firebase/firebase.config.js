@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBOWS6lC78nHSNZSekgtPtM8Ykm_Sxjq1M",
-  authDomain: "health-smart-ff2c3.firebaseapp.com",
-  projectId: "health-smart-ff2c3",
-  storageBucket: "health-smart-ff2c3.appspot.com",
-  messagingSenderId: "798677230651",
-  appId: "1:798677230651:web:65cfdc4a261e3e6449681e",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

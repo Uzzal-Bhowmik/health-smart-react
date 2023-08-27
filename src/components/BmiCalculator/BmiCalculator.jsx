@@ -13,7 +13,9 @@ const BmiCalculator = () => {
     const height = parseFloat(form.height.value);
     const weight = parseFloat(form.weight.value);
 
-    let bmiValue = (weight / ((height * height) / 10000)).toFixed(2);
+    let bmiValue = (weight / (height * 0.3048 * height * 0.3048)).toFixed(2);
+
+    console.log(bmiValue);
 
     if (bmiValue < 18.5) {
       setBmiResult("Underweight");
@@ -106,7 +108,7 @@ const BmiCalculator = () => {
                 type="text"
                 name="height"
                 id=""
-                placeholder="Height/cm"
+                placeholder="Height/feet"
                 className=""
                 required
               />
@@ -145,7 +147,7 @@ const BmiCalculator = () => {
 
             <div className="flex-center justify-content-start mt-5">
               <button type="submit" className="bmi-calc-btn">
-                Calculate
+                Calculate!!
               </button>
 
               <p className="m-0 ps-3 text-success fw-bold fs-5">

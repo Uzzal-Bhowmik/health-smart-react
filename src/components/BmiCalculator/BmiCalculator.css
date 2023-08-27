@@ -110,8 +110,21 @@ select {
   cursor: pointer;
   transition: all 0.2s ease-out;
   margin-left: 8px;
+  animation: btn-float 2000ms ease-in-out infinite;
 }
 
 .bmi-calc-btn:hover {
   transform: translateY(-2px);
+}
+
+@keyframes btn-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

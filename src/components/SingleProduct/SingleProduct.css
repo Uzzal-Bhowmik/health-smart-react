@@ -22,7 +22,7 @@
   text-align: center;
   border-radius: 70px;
   padding-top: 2px;
-  z-index: 99999;
+  z-index: 999;
 }
 .product-card img {
   width: 60%;

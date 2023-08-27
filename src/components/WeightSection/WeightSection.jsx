@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./WeightSection.css";
 import CountUp from "react-countup";
-import { BsArrowRight, BsCart2 } from "react-icons/bs";
-import { toast } from "react-hot-toast";
+import { BsArrowRight } from "react-icons/bs";
+import SingleProduct from "../SingleProduct/SingleProduct";
 import { useNavigate } from "react-router-dom";
 
 const WeightSection = () => {
@@ -13,16 +13,7 @@ const WeightSection = () => {
       .then((data) => setProducts(data.slice(0, 4)));
   }, []);
 
-  const notify = (name) => {
-    toast.success(<b>{`${name} is added to cart.`}</b>, {
-      position: "top-right",
-    });
-  };
-
   const navigate = useNavigate();
-  const handleShop = () => {
-    navigate("/shop");
-  };
 
   return (
     <div className="container mt-5">
@@ -97,7 +88,7 @@ const WeightSection = () => {
             color: "rgb(2, 165, 118)",
             border: "none",
           }}
-          onClick={handleShop}
+          onClick={() => navigate("/shop")}
         >
           See More <BsArrowRight className="mt-1" />
         </button>
@@ -106,21 +97,7 @@ const WeightSection = () => {
       <div className="product-container flex-center pb-5">
         {products &&
           products.map((product) => (
-            <div className="product-card" key={product.id}>
-              <span className="product-group">{product?.group}</span>
-              <img src={product?.img} alt="" />
-              <h4 className="fs-3 fw-semibold">{product?.name}</h4>
-              <p className="product-mg my-3">{product?.mg} grams</p>
-
-              <div className="service-price">
-                <span>{product?.price}</span>
-                <span>USD</span>
-              </div>
-
-              <button className="service-btn" onClick={handleShop}>
-                Add to Cart <BsCart2 />
-              </button>
-            </div>
+            <SingleProduct key={product.id} product={product} />
           ))}
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BsArrowLeft } from "react-icons/bs";
-import { BiLeftArrow } from "react-icons/bi";
 import { Pagination } from "react-pagination-bar";
 import "react-pagination-bar/dist/index.css";
 import { Link } from "react-router-dom";

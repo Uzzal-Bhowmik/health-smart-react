@@ -18,14 +18,12 @@
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.10.1",
-    "react-paginate": "^8.2.0",
     "react-pagination-bar": "^2.0.1",
     "react-rainbow-components": "^1.32.0",
     "react-router-dom": "^6.15.0",
     "react-router-hash-link": "^2.4.3",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1",
-    "sweetpagination": "^1.0.15"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

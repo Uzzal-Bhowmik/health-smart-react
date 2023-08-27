@@ -9,7 +9,6 @@ import BmiCalculator from "../BmiCalculator/BmiCalculator";
 import Services from "../Services/Services";
 import WeightSection from "../WeightSection/WeightSection";
 import NewsLetter from "../Newsletter/NewsLetter";
-import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -79,12 +78,6 @@ const Home = () => {
         <NewsLetter />
       </div>
       {/* Newsletter Section End */}
-
-      {/* footer Start */}
-      <footer className="py-5 mt-5">
-        <Footer />
-      </footer>
-      {/* footer End */}
     </div>
   );
 };

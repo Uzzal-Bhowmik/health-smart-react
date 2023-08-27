@@ -10,7 +10,7 @@ const WeightSection = () => {
   useEffect(() => {
     fetch("/products.json")
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => setProducts(data.slice(0, 4)));
   }, []);
 
   const notify = (name) => {
@@ -117,10 +117,7 @@ const WeightSection = () => {
                 <span>USD</span>
               </div>
 
-              <button
-                className="service-btn"
-                onClick={() => notify(product?.name)}
-              >
+              <button className="service-btn" onClick={handleShop}>
                 Add to Cart <BsCart2 />
               </button>
             </div>

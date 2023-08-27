@@ -1,12 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
+import { BsArrowLeft } from "react-icons/bs";
+import { Pagination } from "react-pagination-bar";
+import "react-pagination-bar/dist/index.css";
+import { Link } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import "./Shop.css";
+import SingleProduct from "../SingleProduct/SingleProduct";
 
 const Shop = () => {
+  const products = useLoaderData();
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const pagePostsLimit = 6;
+
+  console.log(products);
+
   return (
-    <div>
-      <p>this is the shop</p>
+    <div className="shop">
+      <div className="shop-banner-container">
+        <div className="section-banner container">
+          <div>
+            <Link to="/" className="back-btn-link text-muted">
+              <div>
+                <BsArrowLeft />
+              </div>
+              <p>Back to Home</p>
+            </Link>
+
+            <div>
+              <h1 className="section-title fs-1 fw-bold mt-4 mb-3">Shop</h1>
+              <p className="fw-semibold fs-6 text-muted ms-2">
+                Welcome to our resourceful shop, with all your dietary and
+                nutrition-based medicines and products <br /> of international
+                standard, top quality and prescribed by doctors around the
+                world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h1 className="fw-bold ms-4 mt-5" style={{ color: "rgb(0, 56, 62)" }}>
+          Top Selling Products of All Time
+        </h1>
+        <div className="products-container container mt-5">
+          {products
+            ?.slice(
+              (currentPage - 1) * pagePostsLimit,
+              currentPage * pagePostsLimit
+            )
+            .map((product) => (
+              <div key={product.id}>
+                <SingleProduct product={product} />
+              </div>
+            ))}
+        </div>
+        <Pagination
+          currentPage={currentPage}
+          itemsPerPage={pagePostsLimit}
+          onPageChange={(pageNumber) => setCurrentPage(pageNumber)}
+          totalItems={products.length}
+          pageNeighbours={2}
+          withProgressBar={true}
+        />
+      </div>
     </div>
   );
 };
-
 export default Shop;

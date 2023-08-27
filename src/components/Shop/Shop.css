@@ -1,0 +1,31 @@
+.shop-banner-container {
+  background-color: #f3f3fd;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+/* pagination styles */
+.rpb-root {
+  align-items: center !important;
+  width: 100% !important;
+  margin-top: 71px !important;
+}
+
+.rpb-item--active {
+  background: linear-gradient(141deg, #3a8ef6 0%, #6f3afa 100%);
+  font-weight: bold;
+  color: #fff;
+}
+
+.rpb-item {
+  border: 1px solid rgb(27, 111, 140);
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  font-size: 1.1rem;
+}

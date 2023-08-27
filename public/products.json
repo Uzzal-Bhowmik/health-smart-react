@@ -30,5 +30,149 @@
     "img": "../src/assets/body-dynamix.webp",
     "mg": "20",
     "price": "180.00"
+  },
+  {
+    "id": "5",
+    "group": "Medicines",
+    "name": "Pain Relief Tablets",
+    "img": "../src/assets/1_0d9444bc-6f3c-4d49-93bb-c820ff6fd854_306x203.avif",
+    "mg": "20",
+    "price": "12.50"
+  },
+  {
+    "id": "6",
+    "group": "Supplements",
+    "name": "Calcium Supplement",
+    "img": "../src/assets/1_16955e1a-26a7-49b3-815f-7ef538985791_306x203.avif",
+    "mg": "25",
+    "price": "24.00"
+  },
+  {
+    "id": "7",
+    "group": "Healthcare",
+    "name": "Electrolyte Powder",
+    "img": "../src/assets/1_22d1bacf-51ff-49c1-a631-2c266066e4d2_306x203.avif",
+    "mg": "15",
+    "price": "15.50"
+  },
+  {
+    "id": "8",
+    "group": "Medicines",
+    "name": "Antibiotic Capsules",
+    "img": "../src/assets/1_407957e5-2be0-46f5-9543-f2dbdd5602e2_306x203.avif",
+    "mg": "40",
+    "price": "32.00"
+  },
+  {
+    "id": "9",
+    "group": "Supplements",
+    "name": "Multivitamin Tablets",
+    "img": "../src/assets/1_4f3cdca4-57cd-4c11-8d63-54f0cab6aec7_306x203.avif",
+    "mg": "10",
+    "price": "10.00"
+  },
+  {
+    "id": "10",
+    "group": "Healthcare",
+    "name": "Anti-Inflammatory Gel",
+    "img": "../src/assets/1_653ef521-ba77-491b-8308-429359e70a7c_306x203.avif",
+    "mg": "40",
+    "price": "8.50"
+  },
+  {
+    "id": "11",
+    "group": "Medicines",
+    "name": "Cough Syrup",
+    "img": "../src/assets/1_ab928d3c-bda6-479d-8653-813c59ff98ed_306x203.avif",
+    "mg": "30",
+    "price": "7.00"
+  },
+  {
+    "id": "12",
+    "group": "Supplements",
+    "name": "Plant-Based Protein",
+    "img": "../src/assets/1_c4274e98-4503-427d-905e-0b691bb2d047_306x203.avif",
+    "mg": "20",
+    "price": "29.00"
+  },
+  {
+    "id": "13",
+    "group": "Healthcare",
+    "name": "First Aid Kit",
+    "img": "../src/assets/1_cc4b4fd5-c18e-461f-b663-a3910f091a42_306x203.avif",
+    "mg": "10",
+    "price": "15.00"
+  },
+  {
+    "id": "14",
+    "group": "Medicines",
+    "name": "Allergy Relief Tablets",
+    "img": "../src/assets/1_d3a49d0c-e5a5-465e-84e7-204e9c53849a_306x203.avif",
+    "mg": "30",
+    "price": "21.50"
+  },
+  {
+    "id": "15",
+    "group": "Supplements",
+    "name": "Dietary Fiber Capsules",
+    "img": "../src/assets/1_e3f81f0f-21f4-46dc-8690-606031cdee83_306x203.avif",
+    "mg": "25",
+    "price": "11.00"
+  },
+  {
+    "id": "16",
+    "group": "Healthcare",
+    "name": "Pain Relief Cream",
+    "img": "../src/assets/1_ff51800f-7b81-4de7-b360-636f6be7f989_306x203.avif",
+    "mg": "40",
+    "price": "28.00"
+  },
+  {
+    "id": "17",
+    "group": "Medicines",
+    "name": "Antacid Tablets",
+    "img": "../src/assets/1_fabca3fe-f9d1-44ca-8b4a-a91ced67d2f5_306x203.avif",
+    "mg": "38",
+    "price": "20.00"
+  },
+  {
+    "id": "18",
+    "group": "Minerals",
+    "name": "Zinc Capsules",
+    "img": "../src/assets/452331_web_Nugenix_Thermo_Front_Box-removebg-preview_306x203.avif",
+    "mg": "40",
+    "price": "7.50"
+  },
+  {
+    "id": "19",
+    "group": "Glucose",
+    "name": "Energy Chews",
+    "img": "../src/assets/energy bum.webp",
+    "mg": "10",
+    "price": "13.00"
+  },
+  {
+    "id": "20",
+    "group": "Proteins",
+    "name": "Collagen Peptides",
+    "img": "../src/assets/quest.avif",
+    "mg": "15",
+    "price": "25.00"
+  },
+  {
+    "id": "21",
+    "group": "Vitamins",
+    "name": "Vitamin E Capsules",
+    "img": "../src/assets/total oil.avif",
+    "mg": "40",
+    "price": "14.00"
+  },
+  {
+    "id": "22",
+    "group": "Minerals",
+    "name": "Potassium Supplements",
+    "img": "../src/assets/thermox.webp",
+    "mg": "20",
+    "price": "10.50"
   }
 ]

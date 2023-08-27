@@ -56,7 +56,9 @@ const Blogs = () => {
             </Link>
 
             <div>
-              <h1 className="section-title fs-1 fw-bold mt-4 mb-3">Blogs</h1>
+              <h1 className="section-title fs-1 fw-bold mt-4 mb-3">
+                Blog & Articles
+              </h1>
               <p className="fw-semibold fs-6 text-muted ms-2">
                 Welcome to our vibrant and insightful blog, your go-to
                 destination for best dietary plans, <br /> knowledge enriching

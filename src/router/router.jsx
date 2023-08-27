@@ -53,6 +53,7 @@ const router = createBrowserRouter([
 
       {
         path: "/shop",
+        loader: async () => fetch("/products.json"),
         element: (
           <PrivateRoute>
             <Shop />

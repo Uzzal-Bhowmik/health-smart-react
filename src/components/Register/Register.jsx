@@ -31,7 +31,6 @@ const Register = () => {
     setRegisterError("");
     googleSignIn()
       .then((result) => {
-        console.log(result.user);
         navigate("/", { replace: true });
       })
       .catch((err) => setRegisterError(err?.code));

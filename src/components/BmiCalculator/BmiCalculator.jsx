@@ -15,8 +15,6 @@ const BmiCalculator = () => {
 
     let bmiValue = (weight / (height * 0.3048 * height * 0.3048)).toFixed(2);
 
-    console.log(bmiValue);
-
     if (bmiValue < 18.5) {
       setBmiResult("Underweight");
     } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {

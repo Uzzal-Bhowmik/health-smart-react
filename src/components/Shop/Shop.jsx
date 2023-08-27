@@ -25,8 +25,6 @@ const Shop = () => {
     }, 1000);
   };
 
-  console.log(products);
-
   return (
     <div className="shop">
       <div className="shop-banner-container">

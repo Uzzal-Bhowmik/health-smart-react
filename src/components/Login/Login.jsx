@@ -37,8 +37,6 @@ const Login = () => {
     setLoginError("");
     googleSignIn()
       .then((result) => {
-        console.log(result.user);
-
         // navigate to the desired route
         navigate(from, { replace: true });
       })

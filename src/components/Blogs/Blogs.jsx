@@ -7,7 +7,6 @@ import mixitup from "mixitup";
 
 const Blogs = () => {
   const blogsData = useLoaderData();
-  console.log(blogsData);
 
   // filter buttons
   const filterButtonData = [

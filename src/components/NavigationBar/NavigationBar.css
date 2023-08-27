@@ -44,21 +44,28 @@
 /* navbar links */
 /* ------------ */
 
-.navbar-nav a {
+.navlink,
+.dropdown a {
   color: #404040;
   font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 30px;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease-out;
   z-index: 999;
 }
-.navbar-nav a .active {
+.navlink .active,
+.dropdown a .active {
   border-bottom: 2px solid #1260bf77;
 }
-.navbar-nav a:hover {
+.navlink:hover,
+.dropdown a:hover {
   border-bottom: 2px solid #1260bf77;
+}
+.nav-link {
+  display: inline !important;
+  padding: 0 0 2.9px 0 !important;
 }
 
 .login-btn {
@@ -81,4 +88,11 @@
 
 .login-btn:hover {
   transform: translateY(-3px);
+}
+
+/* nav user loading animation style */
+.kILvyp {
+  position: static !important;
+  margin-top: 3rem !important;
+  margin-left: 1rem !important;
 }

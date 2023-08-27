@@ -12,10 +12,11 @@ const NewsLetter = () => {
       </div>
 
       <div className="text-center">
-        <h6 className="section-title fw-bold fs-5">NEWSLETTER</h6>
+        <h6 className="section-title fw-bold fs-5">CONTACT</h6>
         <h1 className="mt-3 mb-4 fw-bold" style={{ color: "rgb(0, 56, 63)" }}>
-          Subscribe newsletter and <br />
-          get 20% off
+          Need Help Finding the right doctor
+          <br />
+          for you?
         </h1>
         <p className="text-muted fw-semibold mb-5 w-75 mx-auto">
           Globally, adolescents―particularly girls―are greatly affected by
@@ -35,7 +36,7 @@ const NewsLetter = () => {
             placeholder="Enter Email Address"
             required
           />
-          <button type="submit">Subscribe</button>
+          <button type="submit">Send</button>
         </form>
       </div>
 

@@ -7,10 +7,12 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { HashLink } from "react-router-hash-link";
 import { AuthContext } from "../../context/ContextAuth";
+import { Spinner } from "react-rainbow-components";
+import { NavDropdown } from "react-bootstrap";
 
 const NavigationBar = () => {
   const [path, setPath] = useState("");
-  const { user, logOut } = useContext(AuthContext);
+  const { user, isLoading, logOut } = useContext(AuthContext);
 
   // finding pathname
   const location = useLocation();
@@ -32,6 +34,7 @@ const NavigationBar = () => {
       .catch((err) => console.error(err));
   };
 
+  console.log(isLoading);
   console.log(user);
   return (
     <div>
@@ -154,40 +157,102 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <HashLink to="/#home">Home</HashLink>
+              <HashLink to="/#home" className="navlink">
+                Home
+              </HashLink>
 
-              <HashLink to="/#features">Features</HashLink>
+              <HashLink to="/#features" className="navlink">
+                Features
+              </HashLink>
 
-              <HashLink to="/#services">Services</HashLink>
+              <HashLink to="/#services" className="navlink">
+                Services
+              </HashLink>
 
-              <HashLink to="/#products">Products</HashLink>
+              <HashLink to="/#products" className="navlink">
+                Products
+              </HashLink>
 
-              <HashLink to="/#newsletter">Contact Us</HashLink>
+              <HashLink to="/#newsletter" className="navlink">
+                Contact Us
+              </HashLink>
+
+              <NavDropdown title="Collections" id="basic-nav-dropdown">
+                <HashLink
+                  data-rr-ui-dropdown-item=""
+                  class="dropdown-item navlink"
+                  to="/blog"
+                >
+                  Blog
+                </HashLink>
+                <HashLink
+                  data-rr-ui-dropdown-item=""
+                  class="dropdown-item navlink"
+                  to="/all-products"
+                >
+                  All Products
+                </HashLink>
+              </NavDropdown>
             </Nav>
 
-            {user?.uid && (
-              <div className="me-3" style={{ cursor: "pointer" }}>
-                {user?.photoURL ? (
-                  <img
-                    src={`${user.photoURL}`}
-                    style={{
-                      width: "50%",
-                      borderRadius: "50%",
-                      display: "block",
-                      marginLeft: "auto",
-                    }}
-                    title={`${user.email}`}
-                  />
-                ) : (
-                  <span
-                    className="fs-3 px-3 py-1 fw-bold rounded-circle bg-success text-light"
-                    title={`${user.email}`}
-                  >
-                    {user?.displayName[0].toUpperCase() ||
-                      user?.email[0].toUpperCase()}
-                  </span>
-                )}
+            {/* ****************************** 
+              Conditions:
+
+              # if isLoading true:
+                    spinner
+              # else  
+                  if user true:
+
+                    if userPhoto true:
+                      photo img
+                    else 
+                      show user email or displayName first letter (uppercase)        
+              
+                  else 
+                    // do nothing
+            
+              ****************************************************
+            */}
+
+            {isLoading ? (
+              <div>
+                <div className="rainbow-position_relative rainbow-p-vertical_xx-large">
+                  <Spinner size="large" type="arc" variant="brand">
+                    <img src={logo} alt="" style={{ width: "60%" }} />
+                  </Spinner>
+                </div>
               </div>
+            ) : (
+              <>
+                {user?.uid && (
+                  <div className="me-3" style={{ cursor: "pointer" }}>
+                    <>
+                      {user?.photoURL ? (
+                        <img
+                          src={`${user.photoURL}`}
+                          style={{
+                            width: "50%",
+                            borderRadius: "50%",
+                            display: "block",
+                            marginLeft: "auto",
+                          }}
+                          title={`${user.email}`}
+                        />
+                      ) : (
+                        <span
+                          className="fs-3 fw-bold rounded-circle bg-success text-light d-block"
+                          title={`${user?.email}`}
+                          style={{ padding: "8px 18px" }}
+                        >
+                          {(user?.displayName !== null &&
+                            user?.displayName[0].toUpperCase()) ||
+                            user?.email[0].toUpperCase()}
+                        </span>
+                      )}
+                    </>
+                  </div>
+                )}
+              </>
             )}
 
             {!user?.uid ? (

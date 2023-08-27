@@ -22,7 +22,6 @@ const Register = () => {
     signUp(email, pass)
       .then((result) => {
         // sign in successful
-        console.log(result.user);
         navigate("/", { replace: true });
       })
       .catch((err) => setRegisterError(err?.code));

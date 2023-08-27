@@ -5,7 +5,7 @@ import { Card, Calendar } from "react-rainbow-components";
 
 const DynamicService = () => {
   const serviceData = useLoaderData();
-  console.log(serviceData);
+
   const { title, img, description, docName, disabledDays, docProfile } =
     serviceData;
 

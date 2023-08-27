@@ -22,12 +22,10 @@ const Login = () => {
     const form = e.target;
     const email = form.email.value;
     const pass = form.password.value;
-    console.log(form);
 
     signIn(email, pass)
       .then((result) => {
         // sign in successful
-        console.log(result.user);
 
         // navigate to the desired route
         navigate(from, { replace: true });

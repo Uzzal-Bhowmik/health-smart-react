@@ -14,7 +14,6 @@ const BmiCalculator = () => {
     const weight = parseFloat(form.weight.value);
 
     let bmiValue = (weight / ((height * height) / 10000)).toFixed(2);
-    console.log(weight, height, bmiValue);
 
     if (bmiValue < 18.5) {
       setBmiResult("Underweight");
@@ -56,7 +55,7 @@ const BmiCalculator = () => {
           </div>
 
           <div className="features-ops flex-center align-items-start">
-            <div className="pt-2 me-2 shadow">
+            <div className="pt-2 me-2 shadow-lg">
               <img src={icon1} alt="" style={{ height: "50px" }} />
               <h5>Food Choice</h5>
               <p>

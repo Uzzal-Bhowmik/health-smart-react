@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Role of Omega-3 Fatty Acids in Heart Health",
+    "category": "Cardiology",
+    "description": "Learn how incorporating omega-3 fatty acids into your diet can significantly reduce the risk of heart disease and improve overall cardiovascular health.",
+    "author": "Dr. Sarah Johnson",
+    "img": "https://i.ibb.co/s1TPNb3/5.png",
+    "date": "2023-01-10"
+  },
+  {
+    "id": 2,
+    "title": "Top 10 Superfoods for Glowing Skin",
+    "category": "Dermatology",
+    "description": "Discover the best superfoods that can help you achieve radiant and healthy skin naturally, without the need for expensive skincare products.",
+    "author": "Emily Smith, RD",
+    "img": "https://i.ibb.co/bBRPJQk/4.png",
+    "date": "2023-02-15"
+  },
+  {
+    "id": 3,
+    "title": "Balancing Your Diet: A Key to Weight Management",
+    "category": "Nutrition",
+    "description": "Learn about the importance of a balanced diet in achieving and maintaining a healthy weight, and get practical tips for creating balanced meals.",
+    "author": "Julia Martinez, MS, RD",
+    "img": "https://i.ibb.co/fQmJ7Hn/3.png",
+    "date": "2023-03-20"
+  },
+  {
+    "id": 4,
+    "title": "The Importance of Fiber in Digestive Health",
+    "category": "Gastroenterology",
+    "description": "Explore the benefits of a high-fiber diet and how it can promote proper digestion, prevent constipation, and maintain a healthy gut microbiome.",
+    "author": "Dr. Mark Anderson",
+    "img": "https://i.ibb.co/3fzh0t5/2.png",
+    "date": "2023-04-25"
+  },
+  {
+    "id": 5,
+    "title": "The Power of Antioxidants: Protecting Your Cells",
+    "category": "Cardiology",
+    "description": "Discover how antioxidants found in fruits and vegetables can help protect your cells from damage, reduce the risk of cancer, and support overall health.",
+    "author": "Dr. Robert Turner",
+    "img": "https://i.ibb.co/Fw82Bbw/1.png",
+    "date": "2023-05-30"
+  },
+  {
+    "id": 6,
+    "title": "Healthy Eating Habits for Longevity",
+    "category": "Nutrition",
+    "description": "Learn the dietary habits and lifestyle choices that can contribute to a longer and healthier life as you age.",
+    "author": "Eleanor Davis, MD",
+    "img": "https://i.ibb.co/s1TPNb3/5.png",
+    "date": "2023-06-05"
+  },
+  {
+    "id": 7,
+    "title": "The Mediterranean Diet: A Heart-Healthy Eating Plan",
+    "category": "Cardiology",
+    "description": "Explore the Mediterranean diet, its components, and how it can reduce the risk of heart disease and improve overall health.",
+    "author": "Maria Rodriguez, RD",
+    "img": "https://i.ibb.co/bBRPJQk/4.png",
+    "date": "2023-07-10"
+  },
+  {
+    "id": 8,
+    "title": "Eating for Energy: Foods to Boost Your Vitality",
+    "category": "Nutrition",
+    "description": "Discover energy-boosting foods and dietary strategies to help combat fatigue and enhance your overall vitality.",
+    "author": "Dr. Daniel Walker",
+    "img": "https://i.ibb.co/fQmJ7Hn/3.png",
+    "date": "2023-08-15"
+  },
+  {
+    "id": 9,
+    "title": "The Gut-Brain Connection: How Diet Affects Mental Health",
+    "category": "Psychiatry",
+    "description": "Learn about the intricate relationship between the gut and brain, and how dietary choices can impact mental health and mood.",
+    "author": "Sarah Mitchell, MD",
+    "img": "https://i.ibb.co/3fzh0t5/2.png",
+    "date": "2023-09-20"
+  },
+  {
+    "id": 10,
+    "title": "Understanding Food Allergies and Intolerances",
+    "category": "Nutrition",
+    "description": "Explore the differences between food allergies and intolerances, their symptoms, and how to manage them through diet.",
+    "author": "Dr. Michelle Carter",
+    "img": "https://i.ibb.co/Fw82Bbw/1.png",
+    "date": "2023-10-25"
+  },
+  {
+    "id": 11,
+    "title": "Managing Diabetes Through Diet and Lifestyle",
+    "category": "Nutrition",
+    "description": "Learn how a balanced diet, exercise, and lifestyle changes can help individuals with diabetes maintain blood sugar control and improve their quality of life.",
+    "author": "Dr. Susan Lee",
+    "img": "https://i.ibb.co/s1TPNb3/5.png",
+    "date": "2023-11-30"
+  },
+  {
+    "id": 12,
+    "title": "The Ketogenic Diet: Benefits and Risks",
+    "category": "Nutrition",
+    "description": "Discover the pros and cons of the ketogenic diet, its potential health benefits, and considerations for its long-term use.",
+    "author": "John Miller, RD",
+    "img": "https://i.ibb.co/bBRPJQk/4.png",
+    "date": "2023-12-12"
+  }
+]

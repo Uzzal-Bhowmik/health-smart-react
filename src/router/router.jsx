@@ -8,6 +8,8 @@ import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
 import SuccessPage from "../components/SuccessPage/SuccessPage";
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
+import Blogs from "../components/Blogs/Blogs";
+import Shop from "../components/Shop/Shop";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,20 @@ const router = createBrowserRouter([
       {
         path: "/success",
         element: <SuccessPage />,
+      },
+      {
+        path: "/blogs",
+        loader: async () => fetch("/blogs.json"),
+        element: <Blogs />,
+      },
+
+      {
+        path: "/shop",
+        element: (
+          <PrivateRoute>
+            <Shop />
+          </PrivateRoute>
+        ),
       },
     ],
   },

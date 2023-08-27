@@ -34,8 +34,6 @@ const NavigationBar = () => {
       .catch((err) => console.error(err));
   };
 
-  console.log(isLoading);
-  console.log(user);
   return (
     <div>
       <Navbar expand="lg">
@@ -172,16 +170,22 @@ const NavigationBar = () => {
               <HashLink to="/#products" className="navlink">
                 Products
               </HashLink>
+              <Link to="/blogs" className="navlink">
+                Blog
+              </Link>
+              <Link to="/shop" className="navlink">
+                Shop
+              </Link>
 
               <HashLink to="/#newsletter" className="navlink">
                 Contact Us
               </HashLink>
 
-              <NavDropdown title="Collections" id="basic-nav-dropdown">
+              {/* <NavDropdown title="Collections" id="basic-nav-dropdown">
                 <HashLink
                   data-rr-ui-dropdown-item=""
                   class="dropdown-item navlink"
-                  to="/blog"
+                  to="/blogs"
                 >
                   Blog
                 </HashLink>
@@ -190,9 +194,9 @@ const NavigationBar = () => {
                   class="dropdown-item navlink"
                   to="/all-products"
                 >
-                  All Products
+                  Shop
                 </HashLink>
-              </NavDropdown>
+              </NavDropdown> */}
             </Nav>
 
             {/* ****************************** 
@@ -225,24 +229,24 @@ const NavigationBar = () => {
             ) : (
               <>
                 {user?.uid && (
-                  <div className="me-3" style={{ cursor: "pointer" }}>
+                  <div
+                    className="me-3"
+                    style={{ cursor: "pointer", width: "47px" }}
+                  >
                     <>
                       {user?.photoURL ? (
                         <img
                           src={`${user.photoURL}`}
                           style={{
-                            width: "50%",
+                            width: "100%",
                             borderRadius: "50%",
-                            display: "block",
-                            marginLeft: "auto",
                           }}
                           title={`${user.email}`}
                         />
                       ) : (
                         <span
-                          className="fs-3 fw-bold rounded-circle bg-success text-light d-block"
+                          className="fs-3 fw-bold rounded-circle bg-success text-light d-block text-center"
                           title={`${user?.email}`}
-                          style={{ padding: "8px 18px" }}
                         >
                           {(user?.displayName !== null &&
                             user?.displayName[0].toUpperCase()) ||

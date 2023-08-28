@@ -6,7 +6,6 @@ import { BsCalendarRange } from "react-icons/bs";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import ellipse1 from "../../assets/banner-bg-1.png";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Services = () => {
   const [services, setServices] = useState([]);

@@ -37,7 +37,7 @@ const Shop = () => {
               <p>Back to Home</p>
             </Link>
 
-            <div>
+            <div className="animate__animated animate__fadeInLeft animate__slow">
               <h1 className="section-title fs-1 fw-bold mt-4 mb-3">Shop</h1>
               <p className="fw-semibold fs-6 text-muted ms-2">
                 Welcome to our resourceful shop, with all your dietary and

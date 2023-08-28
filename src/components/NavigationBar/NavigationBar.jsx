@@ -220,7 +220,7 @@ const NavigationBar = () => {
 
             {isLoading ? (
               <div>
-                <div className="rainbow-position_relative rainbow-p-vertical_xx-large">
+                <div className="rainbow-position_relative rainbow-p-vertical_xx-large ">
                   <Spinner size="large" type="arc" variant="brand">
                     <img src={logo} alt="" style={{ width: "60%" }} />
                   </Spinner>

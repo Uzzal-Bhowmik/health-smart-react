@@ -41,7 +41,7 @@ const ContextAuth = ({ children }) => {
     return signOut(auth);
   };
 
-  // observer
+  // state observer
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);

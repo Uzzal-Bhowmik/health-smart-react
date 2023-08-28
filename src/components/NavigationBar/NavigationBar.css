@@ -92,7 +92,7 @@
 
 /* nav user loading animation style */
 .kILvyp {
-  position: static !important;
+  position: relative !important;
   margin-top: 3rem !important;
-  margin-left: 1rem !important;
+  left: 30% !important;
 }

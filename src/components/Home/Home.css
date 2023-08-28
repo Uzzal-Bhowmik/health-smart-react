@@ -82,7 +82,7 @@
 }
 
 .banner-title p {
-  width: 762px;
+  max-width: 762px;
   color: #8a8585;
   font-size: 26px;
   font-weight: 700;
@@ -152,4 +152,64 @@ footer {
   background-color: #f3f3fdcd;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+
+/* media queries */
+@media screen and (max-width: 770px) {
+  .home-banner {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .home-banner .left-side,
+  .home-banner .right-side {
+    width: 100%;
+  }
+
+  .bg-1,
+  .bg-2 {
+    display: none;
+  }
+
+  .home-banner .right-side img {
+    width: 70%;
+    height: auto;
+  }
+
+  .health-token {
+    width: 210px;
+  }
+
+  .health-token p {
+    font-size: 1rem;
+  }
+
+  .health-token img {
+    width: 37px;
+    height: 25px;
+  }
+
+  .banner-title h1 {
+    margin-top: 1.5rem;
+    font-size: 32px;
+    padding-left: 5px;
+    line-height: 50px;
+  }
+  .banner-title h1 span {
+    line-height: 90px !important;
+  }
+
+  .banner-title p {
+    font-size: 18px;
+    padding-inline: 10px;
+  }
+
+  .search-bar input {
+    width: 100%;
+    height: 62px;
+  }
+
+  .search-bar img {
+    right: 13px;
+  }
 }

@@ -1,6 +1,6 @@
 .blog {
   position: relative;
-  width: 430px;
+  max-width: 430px;
   min-height: 630px;
   border: 2px solid rgb(0, 56, 62);
   border-radius: 20px;

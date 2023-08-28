@@ -23,7 +23,7 @@ const Blogs = () => {
       label: "Nutrition",
     },
     {
-      label: "Gastroenterology",
+      label: "Gastronology",
     },
     {
       label: "Psychiatry",
@@ -74,7 +74,7 @@ const Blogs = () => {
             Top Blogs
           </h1>
 
-          <div>
+          <div className="filter-btn-container">
             {filterButtonData.map((btn) => (
               <button
                 key={btn.label}

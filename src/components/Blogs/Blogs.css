@@ -73,3 +73,30 @@
 .blogs .blog {
   margin-inline: auto;
 }
+
+/* media queries */
+@media screen and (max-width: 770px) {
+  .blogs-header {
+    flex-direction: column !important;
+    align-items: self-start !important;
+  }
+
+  .filter-btn-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .filter-btn {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .blogs {
+    grid-template-columns: 1fr;
+  }
+  .blog {
+    width: 95%;
+  }
+}

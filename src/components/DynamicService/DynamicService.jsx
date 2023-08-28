@@ -79,17 +79,17 @@ const DynamicService = () => {
           </div>
 
           {/* right side */}
-          <div>
-            <h4 className="fs-3 fw-bold">
+          <div className="appointment-container">
+            <h4 className="fs-3 fw-bold appoint-title">
               Appointment for {selectedDate} (60 minutes)
             </h4>
 
             <div
-              className="flex-center border border-2 p-2 mt-3"
+              className="flex-center border border-2 p-2 mt-3 flex-column flex-md-row appoint-service"
               style={{ borderRadius: "20px" }}
             >
               <img src={img} alt="" />
-              <div className="ms-3">
+              <div className="ms-3 mt-3 mt-md-0">
                 <h4 className="fw-bold">{title}</h4>
                 <p>{description}</p>
               </div>
@@ -109,7 +109,7 @@ const DynamicService = () => {
             </div>
 
             <button className="appoint-time">3:30 PM</button>
-            <button className="appoint-time ms-4">4:30 PM</button>
+            <button className="appoint-time ms-md-4">4:30 PM</button>
 
             <p className="mt-4 text-muted">* All in Bangladesh Standard Time</p>
 

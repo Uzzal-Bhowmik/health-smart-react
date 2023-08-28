@@ -101,3 +101,34 @@
   font-weight: 500;
   margin-left: 10px;
 }
+
+/* media queries */
+
+@media screen and (max-width: 770px) {
+  .bg-blur {
+    display: none;
+  }
+
+  .user-account-page {
+    flex-direction: column;
+  }
+
+  .user-account-page .left,
+  .user-account-page .right {
+    width: 100%;
+  }
+
+  .user-account-page .left {
+    margin-right: 0;
+    padding-top: 20px;
+  }
+  .user-account-page .left h1 {
+    margin-bottom: 20px;
+    line-height: 50px;
+  }
+  .user-account-page input,
+  .user-account-page button[type="submit"],
+  .external-login-method {
+    width: 100%;
+  }
+}

@@ -3,13 +3,16 @@
 }
 
 /* calendar styles */
-.goHshR {
+.goHshR,
+.fajCpn {
   border: 1px solid rgb(84, 96, 255) !important;
 }
-.ezErtF {
+.ezErtF,
+.gQOBgu {
   padding: 40px 12px 18px !important;
 }
-.flJpbM {
+.flJpbM,
+.fFyfiq {
   width: 96% !important;
   height: 27rem;
   margin-inline: auto;
@@ -47,4 +50,41 @@
 
 .confirm-btn:hover {
   transform: translateY(-3px);
+}
+
+/* media queries */
+@media screen and (max-width: 770px) {
+  .calendar-doc-container {
+    flex-direction: column;
+    width: 100% !important;
+    align-items: start !important;
+  }
+
+  .goHshR,
+  .fajCpn {
+    width: 145% !important;
+  }
+
+  .appointment-container {
+    margin-top: 40px;
+  }
+
+  .appoint-title {
+    text-align: center;
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .appoint-service img {
+    width: 100%;
+  }
+  .appoint-time {
+    display: block;
+    margin-bottom: 10px;
+    margin-inline: auto;
+  }
+
+  .success-card {
+    width: 90%;
+  }
 }

@@ -12,20 +12,20 @@
 /* ---------------- */
 /* left  side style */
 /* ---------------- */
-.bmi-calc .left-side h1 {
+.bmi-calc .bmi-left-side h1 {
   margin: 1rem auto 1.2rem auto;
   font-size: 3.4rem;
   line-height: 80px;
   font-weight: 500;
 }
 
-.bmi-calc .left-side p {
+.bmi-calc .bmi-left-side p {
   color: #8a8585;
   font-size: 1.8rem;
   font-weight: 500;
 }
 
-.left-side {
+.bmi-left-side {
   width: 55%;
 }
 
@@ -61,12 +61,12 @@
 /* right side style */
 /* ---------------- */
 
-.right-side {
+.bmi-right-side {
   width: 47%;
   padding-left: 23px;
 }
 
-.right-side p {
+.bmi-right-side p {
   color: #8a8585;
   font-size: 1.2rem;
   margin: 1.8rem auto 1.7rem auto;
@@ -75,7 +75,7 @@
   padding-top: 27px;
 }
 
-.right-side input,
+.bmi-right-side input,
 select {
   width: 48%;
   height: 50px;
@@ -89,11 +89,11 @@ select {
   outline: none;
 }
 
-.right-side select {
+.bmi-right-side select {
   color: #8a8585 !important;
 }
 
-.right-side option {
+.bmi-right-side option {
   color: #000 !important;
 }
 
@@ -126,5 +126,33 @@ select {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/* media queries */
+@media screen and (max-width: 770px) {
+  .bmi-left-side,
+  .bmi-right-side {
+    width: 100%;
+  }
+
+  .bmi-calc .bmi-left-side h1 {
+    font-size: 3rem;
+    line-height: 64px;
+  }
+
+  .bmi-calc .bmi-right-side {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+  .bmi-calc .bmi-left-side p {
+    font-size: 1.1rem;
+  }
+
+  .features-ops div {
+    width: 98%;
+    margin-inline: auto;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
   }
 }

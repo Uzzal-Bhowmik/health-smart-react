@@ -79,12 +79,11 @@ const WeightSection = () => {
         </h4>
 
         <button
-          className="d-block service-btn bg-light fw-bold"
+          className="d-block service-btn bg-light fw-bold m-0 me-md-4"
           style={{
             width: "220px",
             height: "50px",
             marginInline: "0",
-            marginRight: "30px",
             color: "rgb(2, 165, 118)",
             border: "none",
           }}

@@ -44,8 +44,7 @@
 /* navbar links */
 /* ------------ */
 
-.navlink,
-.dropdown a {
+.navlink {
   color: #404040;
   font-size: 1.1rem;
   font-weight: 700;
@@ -55,12 +54,10 @@
   transition: all 0.3s ease-out;
   z-index: 999;
 }
-.navlink .active,
-.dropdown a .active {
+.navlink .active {
   border-bottom: 2px solid #1260bf77;
 }
-.navlink:hover,
-.dropdown a:hover {
+.navlink:hover {
   border-bottom: 2px solid #1260bf77;
 }
 .nav-link {
@@ -95,4 +92,27 @@
   position: relative !important;
   margin-top: 3rem !important;
   left: 30% !important;
+}
+
+.gfdwak {
+  position: relative !important;
+  margin-top: 3rem !important;
+  left: 30% !important;
+}
+
+/* media queries */
+
+@media screen and (max-width: 770px) {
+  .navbar {
+    height: fit-content;
+
+    .show {
+      border-bottom: 2px solid lightblue;
+      padding-bottom: 16px;
+    }
+
+    .navlink {
+      margin-bottom: 10px;
+    }
+  }
 }

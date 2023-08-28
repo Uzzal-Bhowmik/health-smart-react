@@ -52,3 +52,35 @@
     transform: translateY(0);
   }
 }
+
+/* media queries */
+@media screen and (max-width: 770px) {
+  .newsletter-section div:nth-of-type(1) {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .fruit-left,
+  .fruit-right {
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  .fruit-left img,
+  .fruit-right img {
+    width: 30%;
+    opacity: 0.5;
+  }
+
+  .fruit-left img {
+    position: absolute;
+    top: -70px;
+    z-index: -100;
+  }
+  .fruit-right img {
+    right: 0;
+    position: absolute;
+    top: -50px;
+    z-index: -100;
+  }
+}

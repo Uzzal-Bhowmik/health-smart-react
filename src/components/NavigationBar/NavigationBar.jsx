@@ -8,8 +8,6 @@ import logo from "../../assets/logo.png";
 import { HashLink } from "react-router-hash-link";
 import { AuthContext } from "../../context/ContextAuth";
 import { Spinner } from "react-rainbow-components";
-import { NavDropdown } from "react-bootstrap";
-
 const NavigationBar = () => {
   const [path, setPath] = useState("");
   const { user, isLoading, logOut } = useContext(AuthContext);
@@ -154,7 +152,7 @@ const NavigationBar = () => {
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="ms-auto px-2 py-4 p-md-0">
               <HashLink to="/#home" className="navlink">
                 Home
               </HashLink>
@@ -199,22 +197,22 @@ const NavigationBar = () => {
               </NavDropdown> */}
             </Nav>
 
-            {/* ****************************** 
+            {/* ******************************
               Conditions:
 
               # if isLoading true:
                     spinner
-              # else  
+              # else
                   if user true:
 
                     if userPhoto true:
                       photo img
-                    else 
-                      show user email or displayName first letter (uppercase)        
-              
-                  else 
+                    else
+                      show user email or displayName first letter (uppercase)
+
+                  else
                     // do nothing
-            
+
               ****************************************************
             */}
 
@@ -230,7 +228,7 @@ const NavigationBar = () => {
               <>
                 {user?.uid && (
                   <div
-                    className="me-3"
+                    className="me-3 mb-3 mb-md-0"
                     style={{ cursor: "pointer", width: "47px" }}
                   >
                     <>
@@ -284,3 +282,154 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+
+// import Container from "react-bootstrap/Container";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from "react-bootstrap/NavDropdown";
+// import { Link } from "react-router-dom";
+// import { HashLink } from "react-router-hash-link";
+// import logo from "../../assets/logo.png";
+// import "./NavigationBar.css";
+
+// function NavigationBar() {
+//   return (
+//     <Navbar expand="lg" className="bg-body-tertiary">
+//       <Container>
+//         <Link to="/" className="navbar-brand logo-container">
+//           <div>
+//             <img src={logo} alt="" />{" "}
+//             <p className="mb-0">
+//               Health Smart
+//               <svg
+//                 xmlns="http://www.w3.org/2000/svg"
+//                 width="40"
+//                 height="40"
+//                 viewBox="0 0 85 85"
+//                 fill="none"
+//                 className="logo-end-part"
+//               >
+//                 <g filter="url(#filter0_di_1_1081)">
+//                   <circle
+//                     cx="42.7926"
+//                     cy="37.2074"
+//                     r="16.2074"
+//                     fill="url(#paint0_linear_1_1081)"
+//                   />
+//                 </g>
+//                 <rect
+//                   x="39.2693"
+//                   y="28.0466"
+//                   width="7.04668"
+//                   height="18.3214"
+//                   rx="1.057"
+//                   fill="white"
+//                 />
+//                 <rect
+//                   x="51.9532"
+//                   y="33.6838"
+//                   width="7.04668"
+//                   height="18.3214"
+//                   rx="1.057"
+//                   transform="rotate(90 51.9532 33.6838)"
+//                   fill="white"
+//                 />
+//                 <defs>
+//                   <filter
+//                     id="filter0_di_1_1081"
+//                     x="0.923609"
+//                     y="0.740797"
+//                     width="83.738"
+//                     height="83.7381"
+//                     filterUnits="userSpaceOnUse"
+//                     colorInterpolationFilters="sRGB"
+//                   >
+//                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
+//                     <feColorMatrix
+//                       in="SourceAlpha"
+//                       type="matrix"
+//                       values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+//                       result="hardAlpha"
+//                     />
+//                     <feOffset dy="5.40245" />
+//                     <feGaussianBlur stdDeviation="12.8308" />
+//                     <feComposite in2="hardAlpha" operator="out" />
+//                     <feColorMatrix
+//                       type="matrix"
+//                       values="0 0 0 0 0.0862745 0 0 0 0 0.470588 0 0 0 0 0.94902 0 0 0 0.2 0"
+//                     />
+//                     <feBlend
+//                       mode="normal"
+//                       in2="BackgroundImageFix"
+//                       result="effect1_dropShadow_1_1081"
+//                     />
+//                     <feBlend
+//                       mode="normal"
+//                       in="SourceGraphic"
+//                       in2="effect1_dropShadow_1_1081"
+//                       result="shape"
+//                     />
+//                     <feColorMatrix
+//                       in="SourceAlpha"
+//                       type="matrix"
+//                       values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+//                       result="hardAlpha"
+//                     />
+//                     <feOffset dy="5.40245" />
+//                     <feGaussianBlur stdDeviation="2.70123" />
+//                     <feComposite
+//                       in2="hardAlpha"
+//                       operator="arithmetic"
+//                       k2="-1"
+//                       k3="1"
+//                     />
+//                     <feColorMatrix
+//                       type="matrix"
+//                       values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"
+//                     />
+//                     <feBlend
+//                       mode="normal"
+//                       in2="shape"
+//                       result="effect2_innerShadow_1_1081"
+//                     />
+//                   </filter>
+//                   <linearGradient
+//                     id="paint0_linear_1_1081"
+//                     x1="24.062"
+//                     y1="8.28834"
+//                     x2="97.7333"
+//                     y2="16.2146"
+//                     gradientUnits="userSpaceOnUse"
+//                   >
+//                     <stop stopColor="#3A8EF6" />
+//                     <stop offset="1" stopColor="#6F3AFA" />
+//                   </linearGradient>
+//                 </defs>
+//               </svg>
+//             </p>
+//           </div>
+//         </Link>
+//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+//         <Navbar.Collapse id="basic-navbar-nav">
+//           <Nav className="me-auto">
+//             <HashLink to="/#home">Home</HashLink>
+//             <Nav.Link href="#link">Link</Nav.Link>
+//             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+//               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+//               <NavDropdown.Item href="#action/3.2">
+//                 Another action
+//               </NavDropdown.Item>
+//               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+//               <NavDropdown.Divider />
+//               <NavDropdown.Item href="#action/3.4">
+//                 Separated link
+//               </NavDropdown.Item>
+//             </NavDropdown>
+//           </Nav>
+//         </Navbar.Collapse>
+//       </Container>
+//     </Navbar>
+//   );
+// }
+
+// export default NavigationBar;

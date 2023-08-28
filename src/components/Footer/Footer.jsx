@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="footer-container container flex-between align-items-start">
+    <div className="footer-container container flex-between align-items-start flex-column flex-md-row">
       <div className="left">
         <Link to="/" className="text-decoration-none">
           <img src={logo} alt="" />
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="middle">
+      <div className="middle my-4 my-md-0">
         <h5 className="fs-4 fw-bold">Important Links</h5>
         <HashLink smooth to="/#home">
           Home
@@ -52,6 +52,12 @@ const Footer = () => {
         </HashLink>
         <HashLink smooth to="/#products">
           Products
+        </HashLink>
+        <HashLink smooth to="/blogs">
+          Blog
+        </HashLink>
+        <HashLink smooth to="/shop">
+          Shop
         </HashLink>
         <HashLink smooth to="/#newsletter">
           Contact Us

@@ -37,8 +37,8 @@ const BmiCalculator = () => {
     <div className="container bmi-calc mt-3">
       <h4 className="section-title">FEATURES WE PROVIDE</h4>
 
-      <div className="d-flex align-items-start">
-        <div className="left-side">
+      <div className="d-flex align-items-start flex-column flex-md-row">
+        <div className="bmi-left-side">
           <h1>
             Calculating BMI <br /> is easier.
           </h1>
@@ -54,8 +54,8 @@ const BmiCalculator = () => {
             </h4>
           </div>
 
-          <div className="features-ops flex-center align-items-start">
-            <div className="pt-2 me-2 shadow-lg">
+          <div className="features-ops flex-center flex-column flex-md-row align-items-start">
+            <div className="pt-2 me-2 shadow">
               <img src={icon1} alt="" style={{ height: "50px" }} />
               <h5>Food Choice</h5>
               <p>
@@ -64,7 +64,7 @@ const BmiCalculator = () => {
               </p>
             </div>
 
-            <div className="me-2">
+            <div className="me-2 shadow ">
               <img src={icon2} alt="" />
               <h5>Interactive Chatbot</h5>
               <p>
@@ -73,7 +73,7 @@ const BmiCalculator = () => {
               </p>
             </div>
 
-            <div className="">
+            <div className="shadow ">
               <img src={icon3} alt="" />
               <h5>Nutritional Value</h5>
               <p>
@@ -84,7 +84,7 @@ const BmiCalculator = () => {
           </div>
         </div>
 
-        <div className="right-side">
+        <div className="bmi-right-side">
           <h4 className="fs-2 fw-semibold ">
             Calculate Your BMI(Body Mass Index)
           </h4>

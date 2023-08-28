@@ -112,3 +112,18 @@
   font-size: 30px !important;
   opacity: 1 !important;
 }
+
+/* media queries */
+@media screen and (max-width: 770px) {
+  .slick-next,
+  .slick-prev {
+    z-index: 99 !important;
+  }
+
+  .slick-prev {
+    left: 0 !important;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
+}

@@ -29,3 +29,10 @@
   cursor: pointer;
   font-size: 1.1rem;
 }
+
+/* media queries */
+@media screen and (max-width: 770px) {
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+}

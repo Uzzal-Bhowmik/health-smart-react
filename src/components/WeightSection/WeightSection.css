@@ -20,3 +20,27 @@
   color: white;
   font-weight: bold;
 }
+
+@media screen and (max-width: 770px) {
+  .weight-container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .weight-container .left-side,
+  .weight-container .right-side {
+    width: 100%;
+  }
+  .weight-container .right-side {
+    align-items: self-start;
+    padding-top: 20px;
+  }
+
+  .product-container {
+    flex-direction: column;
+  }
+  .product-card {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+}

@@ -54,7 +54,7 @@ const Blogs = () => {
               <p>Back to Home</p>
             </Link>
 
-            <div>
+            <div className="animate__animated animate__fadeInLeft animate__slow">
               <h1 className="section-title fs-1 fw-bold mt-4 mb-3">
                 Blog & Articles
               </h1>

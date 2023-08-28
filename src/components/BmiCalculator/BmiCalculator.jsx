@@ -3,6 +3,7 @@ import "./BmiCalculator.css";
 import icon1 from "../../assets/diet 1.png";
 import icon2 from "../../assets/chatbot 1.png";
 import icon3 from "../../assets/stats-2 1.png";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const BmiCalculator = () => {
   const [bmiResult, setBmiResult] = useState("");
@@ -64,7 +65,7 @@ const BmiCalculator = () => {
               </p>
             </div>
 
-            <div className="me-2 shadow ">
+            <div className="me-2 shadow">
               <img src={icon2} alt="" />
               <h5>Interactive Chatbot</h5>
               <p>

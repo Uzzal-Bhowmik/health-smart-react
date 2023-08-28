@@ -18,7 +18,7 @@ const Home = () => {
 
       {/* Top Banner Start */}
       <div className="p-2 home-banner" id="home">
-        <div className=" left-side">
+        <div className="left-side animate__animated animate__fadeInLeft animate__slower">
           <div className="health-token">
             <p className="mb-0">Health Matters </p>
             <img src={heartIcon} alt="" />
@@ -32,13 +32,13 @@ const Home = () => {
               needs.
             </h1>
 
-            <p className="mb-0">
+            <p className="mb-0 animate__animated animate__fadeInLeft animate__slower animate__delay-1s">
               Using your BMI index we advise the best diet plans that is
               suitable for you.
             </p>
           </div>
 
-          <div className="search-bar">
+          <div className="search-bar animate__animated animate__fadeInLeft animate__slower animate__delay-2s">
             <input
               type="text"
               name=""
@@ -49,16 +49,18 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=" right-side">
+        <div className="right-side animate__animated animate__fadeInRight animate__slower">
           <img src={doctor} alt="" />
         </div>
       </div>
       {/* Top Banner End */}
 
       {/* Bmi Calculator Start */}
+
       <div className="py-5 bmi-container" id="features">
         <BmiCalculator />
       </div>
+
       {/* Bmi Calculator End */}
 
       {/* Services Section Start */}
